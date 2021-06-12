@@ -1,0 +1,62 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Preference
+        app:key="currentUser"
+        app:isPreferenceVisible="false"
+        app:summary=""
+        app:title="Zalogowany użytkownik"
+        app:icon="@drawable/ic_baseline_info_24"/>
+
+    <Preference
+        app:title="Panel admina"
+        app:isPreferenceVisible="false"
+        app:key="admin"
+        app:icon="@drawable/ic_baseline_admin_panel_settings_24"/>
+
+    <Preference
+        app:title="Wirtualna adopcja"
+        app:isPreferenceVisible="false"
+        app:key="virtual_adoption"
+        app:icon="@drawable/ic_baseline_chevron_left_24"/>
+
+    <Preference
+        app:title="Zbiórki"
+        app:isPreferenceVisible="false"
+        app:key="fundraising"
+        app:icon="@drawable/ic_baseline_chevron_left_24"/>
+
+    <Preference
+        app:title="Mój profil"
+        app:isPreferenceVisible="false"
+        app:key="profile"
+        app:icon="@drawable/ic_baseline_chevron_left_24"/>
+
+    <Preference
+        app:title="Zaloguj się"
+        app:isPreferenceVisible="false"
+        app:key="signIn"
+        app:icon="@drawable/ic_baseline_chevron_left_24"/>
+
+    <Preference
+        app:title="Zarejestruj się"
+        app:isPreferenceVisible="false"
+        app:key="signUp"
+        app:icon="@drawable/ic_baseline_chevron_left_24"/>
+
+    <Preference
+        app:title="O aplikacji"
+        app:isPreferenceVisible="false"
+        app:key="about"
+        app:icon="@drawable/ic_baseline_chevron_left_24"/>
+
+    <Preference
+        app:icon="@drawable/ic_baseline_chevron_left_24"
+        app:isPreferenceVisible="false"
+        app:key="@string/sign_out"
+        app:title="Wyloguj się" />
+
+
+</PreferenceScreen>

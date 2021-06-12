@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerView_one_item"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/animal_image"
+        android:layout_width="169dp"
+        android:layout_height="164dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <TextView
+        android:id="@+id/animal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Name"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/animal_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/animal_since"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Since"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/animal_name"
+        app:layout_constraintTop_toBottomOf="@+id/animal_name" />
+
+    <TextView
+        android:id="@+id/animal_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Age"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/animal_since"
+        app:layout_constraintTop_toBottomOf="@+id/animal_since" />
+
+    <TextView
+        android:id="@+id/animal_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Sex"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/animal_size"
+        app:layout_constraintTop_toBottomOf="@+id/animal_size" />
+
+    <TextView
+        android:id="@+id/animal_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Size"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/animal_age"
+        app:layout_constraintTop_toBottomOf="@+id/animal_age" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

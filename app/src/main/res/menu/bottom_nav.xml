@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/destination_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:orderInCategory="1"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/destination_favourite"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:orderInCategory="2"
+        android:title="@string/favourite" />
+
+    <item
+        android:id="@+id/destination_chat"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:orderInCategory="3"
+        android:title="@string/chat" />
+
+    <item
+        android:id="@+id/destination_appointment"
+        android:icon="@drawable/ic_baseline_calendar_today_24"
+        android:orderInCategory="4"
+        android:title="@string/appointments" />
+
+    <item
+        android:id="@+id/destination_settings"
+        android:icon="@drawable/ic_baseline_pending_24"
+        android:orderInCategory="5"
+        android:title="Więcej" />
+
+</menu>

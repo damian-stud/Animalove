@@ -1,0 +1,19 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Preference
+        app:key="version"
+        app:title="Wersja aplikacji"
+        app:summary="1.0"
+        app:isPreferenceVisible="true"
+        app:icon="@drawable/ic_baseline_info_24" />
+
+    <Preference
+        app:key="author"
+        app:title="Autor"
+        app:summary="Damian Nowak"
+        app:isPreferenceVisible="true" />
+
+</PreferenceScreen>

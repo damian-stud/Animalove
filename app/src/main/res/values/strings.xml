@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Animalove</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="title_activity_main_test">MainActivityTest</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="home">Strona główna</string>
+    <string name="favourite">Ulubione</string>
+    <string name="chat">Czat</string>
+    <string name="settings">Ustawienia</string>
+    <string name="sign_out">Wyloguj się</string>
+    <string name="more">Więcej</string>
+    <string name="fragment_home_title">Animalove</string>
+    <string name="fragment_animal_details_title">Szczegóły</string>
+    <string name="fragment_settings_title">Ustawienia</string>
+    <string name="fragment_sign_up_title">Rejestracja</string>
+    <string name="fragment_sign_in_title">Logowanie</string>
+    <string name="fragment_user_profile_title">Profil</string>
+    <string name="fragment_admin_title">Panel admina</string>
+    <string name="fragment_add_animal_title">Dodaj zwierzę</string>
+    <string name="fragment_edit_animal_title">Edytuj zwierzę</string>
+    <string name="fragment_delete_animal_title">Usuń zwierzę</string>
+    <string name="fragment_chat_users_title">Wszyscy użytkownicy</string>
+    <string name="fragment_sign_in_before_chat_title">Wymagane logowanie</string>
+    <string name="fragment_all_messages_title">Wszystkie wiadomości</string>
+    <string name="fragment_chat_title">Czat</string>
+    <string name="sign_in_inform">Wprowadź swoje dane</string>
+    <string name="appointments">Wizyty</string>
+    <string name="admin_options">Panel admina</string>
+    <string name="panel_admina">Panel admina</string>
+    <string name="profile">Mój profil</string>
+    <string name="create_appointment">Umów wizytę</string>
+    <string name="dodaj_zwierze">Dodaj zwierzę</string>
+    <string name="edytuj_zwierze">Edytuj zwierzę</string>
+    <string name="usun_zwierze">Usuń zwierzę</string>
+    <string name="wprowadz_dane">Wprowadź dane</string>
+    <string name="numer">Numer</string>
+    <string name="imie">Imię</string>
+    <string name="wiek">Wiek</string>
+    <string name="wybierz_date">Wybierz datę</string>
+    <string name="nie_wybrano_daty">Nie wybrano daty</string>
+    <string name="samiec">samiec</string>
+    <string name="samica">samica</string>
+    <string name="maly">mały</string>
+    <string name="sredni">średni</string>
+    <string name="duzy">duży</string>
+    <string name="bardzo_duzy">bardzo duży</string>
+    <string name="pies">pies</string>
+    <string name="kot">kot</string>
+    <string name="wybierz_zdjecie">Wybierz zdjęcie</string>
+
+
+</resources>

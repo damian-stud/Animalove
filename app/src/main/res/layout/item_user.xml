@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_userImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/chat_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/chat_userImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView_background"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_userImage"
+        app:layout_constraintEnd_toEndOf="@+id/chat_userImage" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView_chat_status_online"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:civ_border_color="#05df29"
+        app:civ_border_width="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_userImage"
+        app:layout_constraintEnd_toEndOf="@+id/chat_userImage" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView_chat_status_offline"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:civ_border_color="#ff0000"
+        app:civ_border_width="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_userImage"
+        app:layout_constraintEnd_toEndOf="@+id/chat_userImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

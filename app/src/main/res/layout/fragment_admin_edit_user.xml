@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AdminEditUserFragment">
+
+    <TextView
+        android:id="@+id/textView_admin_edit_user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zmień rolę użytkownika"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editText_admin_edit_user_login"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="32dp"
+        android:hint="Nazwa użytkownika"
+        android:inputType="textPersonName"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_admin_edit_user_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="245dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_edit_user_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_admin_edit_user_login">
+
+        <RadioButton
+            android:id="@+id/radioButton_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="Użytkownik" />
+
+        <RadioButton
+            android:id="@+id/radioButton_volunteer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wolontariusz" />
+
+        <RadioButton
+            android:id="@+id/radioButton_employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pracownik" />
+
+        <RadioButton
+            android:id="@+id/radioButton_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Administrator" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/button_admin_edit_user_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Edytuj użytkownika"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_edit_user_role"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

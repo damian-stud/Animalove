@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/destination_home">
+
+    <fragment
+        android:id="@+id/destination_home"
+        android:name="pl.devnowak.animalove.fragments.HomeFragment"
+        android:label="Animalove"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_destination_home_to_animalDetailsFragment"
+            app:destination="@id/animalDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_favourite"
+        android:name="pl.devnowak.animalove.fragments.FavouriteFragment"
+        android:label="@string/favourite"
+        tools:layout="@layout/fragment_favourite" >
+        <action
+            android:id="@+id/action_destination_favourite_to_animalDetailsFragment"
+            app:destination="@id/animalDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_chat"
+        android:name="pl.devnowak.animalove.fragments.ChatFragment"
+        android:label="@string/fragment_chat_title"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_destination_chat_to_logInBeforeChatFragment"
+            app:destination="@id/logInBeforeFragment" />
+        <action
+            android:id="@+id/action_destination_chat_to_messageFragment"
+            app:destination="@id/messageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_appointment"
+        android:name="pl.devnowak.animalove.fragments.AppointmentFragment"
+        android:label="Wizyty"
+        tools:layout="@layout/fragment_appointment" />
+    <fragment
+        android:id="@+id/animalDetailsFragment"
+        android:name="pl.devnowak.animalove.fragments.AnimalDetailsFragment"
+        android:label="Szczegóły"
+        tools:layout="@layout/fragment_animal_details">
+        <argument
+            android:name="currentAnimal"
+            app:argType="pl.devnowak.animalove.model.Animal" />
+    </fragment>
+    <fragment
+        android:id="@+id/virtualAdoptionFragment"
+        android:name="pl.devnowak.animalove.fragments.VirtualAdoptionFragment"
+        android:label="Wirtualna adopcja"
+        tools:layout="@layout/fragment_virtual_adoption">
+        <action
+            android:id="@+id/action_virtualAdoptionFragment_to_animalDetailsFragment"
+            app:destination="@id/animalDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allMessagesFragment"
+        android:name="pl.devnowak.animalove.fragments.AllMessagesFragment"
+        android:label="fragment_all_messages"
+        tools:layout="@layout/fragment_all_messages" />
+    <fragment
+        android:id="@+id/chatUsersFragment"
+        android:name="pl.devnowak.animalove.fragments.ChatUsersFragment"
+        android:label="fragment_chat_users"
+        tools:layout="@layout/fragment_chat_users" />
+    <fragment
+        android:id="@+id/logInBeforeFragment"
+        android:name="pl.devnowak.animalove.fragments.LogInBeforeFragment"
+        android:label="Wymagane logowanie"
+        tools:layout="@layout/fragment_log_in_before">
+        <action
+            android:id="@+id/action_logInBeforeFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="pl.devnowak.animalove.fragments.SignInFragment"
+        android:label="Logowanie"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_settFragment"
+            app:destination="@id/destination_settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="pl.devnowak.animalove.fragments.SignUpFragment"
+        android:label="Rejestracja"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_destination_settings"
+            app:destination="@id/destination_settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="pl.devnowak.animalove.fragments.AdminFragment"
+        android:label="Panel admina">
+        <action
+            android:id="@+id/action_adminFragment_to_adminAddAnimalFragment"
+            app:destination="@id/adminAddAnimalFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_adminEditAnimalFragment"
+            app:destination="@id/adminEditAnimalFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_adminDeleteAnimalFragment"
+            app:destination="@id/adminDeleteAnimalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="pl.devnowak.animalove.fragments.UserProfileFragment"
+        android:label="Profil"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="pl.devnowak.animalove.fragments.MessageFragment"
+        android:label="Wiadomości"
+        tools:layout="@layout/fragment_message">
+        <argument
+            android:name="user"
+            app:argType="pl.devnowak.animalove.model.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAddAnimalFragment"
+        android:name="pl.devnowak.animalove.fragments.AdminAddAnimalFragment"
+        android:label="Dodaj zwierzę"
+        tools:layout="@layout/fragment_admin_add_animal" />
+    <fragment
+        android:id="@+id/adminEditAnimalFragment"
+        android:name="pl.devnowak.animalove.fragments.AdminEditAnimalFragment"
+        android:label="Edytuj zwierzę"
+        tools:layout="@layout/fragment_admin_edit_animal" />
+    <fragment
+        android:id="@+id/adminDeleteAnimalFragment"
+        android:name="pl.devnowak.animalove.fragments.AdminDeleteAnimalFragment"
+        android:label="Usuń zwierzę"
+        tools:layout="@layout/fragment_admin_delete_animal" />
+    <fragment
+        android:id="@+id/fundraisingFragment"
+        android:name="pl.devnowak.animalove.fragments.FundraisingFragment"
+        android:label="Zbiórki"
+        tools:layout="@layout/fragment_fundraising" >
+        <action
+            android:id="@+id/action_fundraisingFragment_to_animalDetailsFragment"
+            app:destination="@id/animalDetailsFragment" />
+        <argument
+            android:name="currentAnimal"
+            app:argType="pl.devnowak.animalove.model.Animal" />
+    </fragment>
+    <fragment
+        android:id="@+id/allAppointmentsFragment"
+        android:name="pl.devnowak.animalove.fragments.AllAppointmentsFragment"
+        android:label="fragment_all_appointments"
+        tools:layout="@layout/fragment_all_appointments" />
+    <fragment
+        android:id="@+id/createAppointmentFragment"
+        android:name="pl.devnowak.animalove.fragments.CreateAppointmentFragment"
+        android:label="fragment_create_appointment"
+        tools:layout="@layout/fragment_create_appointment" />
+    <fragment
+        android:id="@+id/destination_settings"
+        android:name="pl.devnowak.animalove.fragments.SettingsFragment"
+        android:label="Więcej" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="pl.devnowak.animalove.fragments.AboutFragment"
+        android:label="O aplikacji" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="pl.devnowak.animalove.fragments.ContactFragment"
+        android:label="Dodatkowe informacje"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/adminEditUserFragment"
+        android:name="pl.devnowak.animalove.fragments.AdminEditUserFragment"
+        android:label="Edycja użytkownika"
+        tools:layout="@layout/fragment_admin_edit_user" />
+</navigation>
